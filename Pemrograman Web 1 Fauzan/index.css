@@ -1,0 +1,124 @@
+:root {
+    --primary: #060f22;
+    --secondary: #11cdfc4f;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--primary);
+    color: #e5e5e5fd;
+  }
+  
+  .container {
+    width: 1170px;
+    padding: 0 15px;
+    margin: 0;
+  }
+  
+  .top-wrapper {
+    color: #e5e5e5;
+    text-align: center;
+  }
+  
+  .top-wrapper::before {
+    padding:  180px 0 100px 0;
+    content: '';
+    background-image: url(Fauzan.jpg);
+    background-size: 75rem;
+    position:fixed;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.1;
+  }
+  
+  /* Navigation */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 5%;
+    background-color: rgba(8, 20, 48, 0.575);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+  }
+  
+  .navbar .navbar-logo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #e5e5e5;
+    font-style: italic;
+  }
+  
+  .navbar .navbar-logo span {
+    color: var(--secondary) 
+  }
+  
+  .navbar .navbar-nav a {
+    color: #e5e5e5;
+    display: inline-block;
+    font-size: 1.4rem;
+    margin: 0 0.8rem;
+    align-items: center;
+  
+  }
+  
+  .navbar .navbar-nav a:hover {
+    color: #949090;
+  }
+  
+  .navbar .navbar-nav a::after {
+    content: '';
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid var(--secondary);
+    transform: scaleX(0);
+    transition: 0.2s linear;
+  }
+  
+  .navbar-nav a:hover::after {
+    transform: scaleX(0.5);
+  }
+  
+  /* Hero Section */
+  .hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url(Fauzan.jpg);
+    background-repeat: no-repeat;
+    background-position-y: 10rem;
+    background-position-x: 50rem;
+  }
+  
+  .hero .content {
+    padding: 1.4rem 7%;
+    max-width: 60rem;
+  }
+  
+  .hero .content h1  {
+    font-size: 5em;
+    color: #917240;
+    text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.5);
+    line-height: 1;
+  }
+  
+  .hero .content h2 {
+    font-size: 3em;
+    color: #e5e5e5;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    line-height: 1;
+  }
